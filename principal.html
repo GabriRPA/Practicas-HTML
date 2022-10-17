@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boycake</title>
+    <link rel="icon" href="BOYCAKE.png">
+</head>
+    <img src="BOYCAKE.png" alt="icon2"
+    width="150px" height="150px">
+    <h1> Bienvenido a la pasteleria y panaderia Boycake.</h1>
+    <img src="pexels-photo-3338681.jpeg" alt="image" 
+    width="750px" height="300px">
+    <br>
+<body>
+    <br>
+    <hr>
+    <h2> Pasteles </h2>
+    <table>
+        <tr>
+            <th>Sabores</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td>Tres leches</td>
+            <td>3,50</td>
+            <!--add small img-->
+        </tr>
+        <tr>
+            <td>Chocolate</td>
+            <td>2,00</td>
+            <!--add small img-->
+        </tr>
+        <tr>
+            <td>Vainilla</td>
+            <td>2,75</td>
+            <!--add small img-->
+        </tr>
+        <tr>
+            <td>Coco</td>
+            <td>3,15</td>
+            <!--add small img-->
+        </tr>    
+        <tr>
+            <td>Fresa</td>
+            <td>2,25</td>
+            <!--add small img-->
+        </tr>    
+    </table>
+    
+    <br>
+    
+    <h2>Decoraciones disponibles para el pastel</h2>
+    <table>
+        <tr>
+            <th>Tipo</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td>Floral</td>
+            <td>2,60</td>    
+            <!--add small img-->
+        </tr>
+        <tr>
+            <td>Crema de mantequilla</td>
+            <td>3,30</td>   
+            <!--add small img--> 
+        </tr>
+        <tr>
+            <td>Coberturas de chocolate</td>
+            <td>4,00</td>
+            <!--add small img-->    
+        </tr>
+        <tr>
+            <td>Glaseada</td>
+            <td>3,50</td> 
+            <!--add small img-->   
+        </tr>
+    </table>
+
+    <br>
+
+    <h2>Combinaciones de sabores para el pastel.</h2>
+    <label for="pastel">Tipo 1</label>
+    <select id="pastel" name="pastel">
+        <option value="Tres leches">Tres leches</option>
+        <option value="Chocolate">Chocolate</option>
+        <option value="Vainilla">Vainilla</option>
+        <option value="Coco">Coco</option>
+        <option value="Fresa">Fresa</option>
+    </select> 
+    
+    <br><br>
+
+    <label for="pastel">Tipo 2</label>
+    <select id="pastel" name="pastel">
+        <option value="Tres leches">Tres leches</option>
+        <option value="Chocolate">Chocolate</option>
+        <option value="Vainilla">Vainilla</option>
+        <option value="Coco">Coco</option>
+        <option value="Fresa">Fresa</option>
+    </select>
+
+    <br>
+
+    <h2>Combinaciones de decoraciones para el pastel.</h2>
+    <label for="decoracion">Decoraciones</label>
+    <select id="decoracion" name="decoracion">
+        <option value="Floral">Floral</option>
+        <option value="Crema de mantequilla">Crema de mantequilla</option>        
+        <option value="Cobertura de chocolate">Cobertura de chocolate</option>
+        <option value="Glaseada">Glaseada</option>
+    </select>
+
+    <br><br>
+
+    <label for="decoracion">Decoraciones</label>
+    <select id="decoracion" name="decoracion">
+        <option value="Floral">Floral</option>
+        <option value="Crema de mantequilla">Crema de mantequilla</option>        
+        <option value="Cobertura de chocolate">Cobertura de chocolate</option>
+        <option value="Glaseada">Glaseada</option>
+    </select>
+
+    <br>
+
+    <h2>Formulario para pedido del pastel.</h2>
+    <h3>Pedido</h3>
+    <form action="/accion.js" id="form1" method="post">
+        <label for="sabor">Sabor:</label>
+        <input list="sabor"><br><br>
+        <datalist id="sabor">
+            <option value="Tres leches">
+            <option value="Chocolate">
+            <option value="Vainilla">    
+            <option value="Coco">
+            <option value="Fresa">    
+        </datalist>
+
+
+        <label for="decoracion">Decoracion:</label>
+        <input type="text" id="decoracion" name="decoracion"><br><br>
+        
+        <label for="combinaciones1">Combinaciones:</label>
+        <input type="text" id="combinaciones1" name="combinaciones1">
+        <label for="combinaciones2">-</label>
+        <input type="text" id="combinaciones2" name="combinaciones2"><br><br>
+        
+        <input type="submit" value="Aceptar">
+        <input type="reset" value="Cancelar">
+    </form>
+
+    <br>
+    <hr>
+
+</body>
+</html>
