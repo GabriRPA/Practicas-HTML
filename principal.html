@@ -27,23 +27,57 @@
                 <th>Precio</th>
             </tr>
             <tr>
-                <td>Tres leches ...............</td>
+                <td>Tres leches ................</td>
                 <td>3,50</td>
                 <!--add small img-->
                 <tr>
             </tr>
-                <td>Chocolate .................</td>
+                <td>Chocolate ..................</td>
                 <td>2,00</td>
                 <!--add small img-->
             </tr>
             <tr>
-                <td>Vainilla .....................</td>
+                <td>Vainilla .......................</td>
                 <td>2,75</td>
                 <!--add small img-->
             </tr>
             <tr>
                 <td>Fresa .........................</td>
                 <td>2,25</td>
+                <!--add small img-->
+            </tr>    
+        </table>
+    </section>
+
+    <br>
+
+    <section>
+        <h2>Panes</h2>
+        <p>Panes disponibles para su compra.</p>
+
+        <table>
+            <tr>
+                <th>Sabores</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>Sal .....................................</td>
+                <td>10 ctvs/Unidad</td>
+                <!--add small img-->
+                <tr>
+            </tr>
+                <td>Dulce .................................</td>
+                <td>15 ctvs/Unidad</td>
+                <!--add small img-->
+            </tr>
+            <tr>
+                <td>Mixto .................................</td>
+                <td>20 ctvs/Unidad</td>
+                <!--add small img-->
+            </tr>
+            <tr>
+                <td>Chocolate ..........................</td>
+                <td>15 ctvs/Unidad</td>
                 <!--add small img-->
             </tr>    
         </table>
@@ -66,12 +100,12 @@
                 <!--add small img-->    
             </tr>
             <tr>
-                <td>Crema de mantequilla .........</td>
+                <td>Crema de mantequilla ..........</td>
                 <td>3,30</td>   
                 <!--add small img--> 
             </tr>
             <tr>
-                <td>Caramelo .............................</td>
+                <td>Caramelo ..............................</td>
                 <td>2,20</td> 
                 <!--add small img-->   
             </tr>
@@ -81,12 +115,12 @@
                 <!--add small img-->   
             </tr>
             <tr>
-                <td>Floral ...................................</td>
+                <td>Floral ....................................</td>
                 <td>2,60</td>    
                 <!--add small img-->
             </tr>
             <tr>
-                <td>Coco ....................................</td>
+                <td>Coco .....................................</td>
                 <td>3,15</td>
                 <!--add small img-->
             </tr>    
@@ -150,8 +184,8 @@
     <br>
 
     <section>
-        <h2>Formulario para pedido del pastel.</h2>
-        <h3>Pedido</h3>
+        <h2>Formulario para el pedido.</h2>
+        <h3>Usted desea?</h3>
 
         <form action="/accion.js" id="form1" method="post">
             <label for="nombre">Nombre:</label> 
@@ -162,6 +196,9 @@
 
             <label for="telefono">Telefono:</label>
             <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su numero."><br><br>
+
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" placeholder="Ingrese su correo."><br><br>
 
             <label for="sabor">Sabor:</label>
             <input list="sabor"><br><br>
@@ -186,9 +223,9 @@
             </datalist>
 
             <label for="combinaciones1">Combinaciones:</label> 
-            <input type="text" id="combinaciones1" name="combinaciones1">
+            <input type="text" id="combinaciones1" name="combinaciones1" placeholder="Describa aqui su 1ra combinacion.">
             <label for="combinaciones2">-</label>
-            <input type="text" id="combinaciones2" name="combinaciones2"><br><br>
+            <input type="text" id="combinaciones2" name="combinaciones2" placeholder="Describa aqui su 2da Combinacion."><br><br>
             
             <input type="submit" value="Enviar">
         </form>
@@ -196,7 +233,24 @@
 
     <br>
     <hr>
-    
+
+    <section>
+        <h3>Informacion adicional sobre nuestra pasteleria y panaderia.</h3>
+        <p>Actualmente contamos con la venta de nuestros productos por medio de pedidos con el fin de satisfacer necesidades, 
+        como el mejoramiento de la calidad de vida tanto nuestra como de la sociedad en general.
+        <br>
+        <br>
+        Nuestro objetivo es dar a conocer los diferentes tipos de pasteles y panes para toda la poblacion,  
+        elaboradas con el más avanzado control de higiene, calidad y tecnología en diseño, utilizando 
+        como materia prima básica harina creamos productos con garantía, calidad tamaño y frescura ideal para la aceptación total.</p>
+        
+        <P>Nuestras redes sociales</P>
+        <ul>
+            <li>Facebook: BoyCake.</li>
+            <li>Instagram: boycake.</li>
+            <li>Correo: boycake.c@gmail.com</li>
+        </ul>
+    </section>
 
 </body>
 </html>
