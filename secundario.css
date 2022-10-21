@@ -1,0 +1,19 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    border-radius: 10px;
+}
+
+h2{
+    background-color: #e5dac3;
+    border: 2px solid #90603cab;
+    border-radius: 14px;
+}
+
+section{
+    background-color: #c3cee5;
+    border: 2px solid #c3cee5;
+    border-radius: 14px;
+}
