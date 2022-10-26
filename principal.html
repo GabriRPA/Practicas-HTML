@@ -7,49 +7,32 @@
     <title>Boycake</title>
     <link rel="icon" href="BOYCAKE.png">
     <link rel="stylesheet" href="./secundario.css">
+    <style>
+ 
+    </style>
 </head>
 <body>
-    <img src="./BOYCAKE.png" alt="icon2"
-    width="150px" height="150px">
-    <h1> Bienvenido a la pasteleria y panaderia Boycake.</h1>
-    <img src="./inicio.jpeg" alt="image" 
-    width="550px" height="300px">
+    <header>
+        <a href="" class="logo">
+            <img src="./BOYCAKE.png" alt="icon2"
+            width="150px" height="150px">           
+        </a>
+        
+        <nav>
+            <a href="#N" class="nav-link">Nosotros</a>
+            <a href="#C" class="nav-link">Contacto</a>
+        </nav>
+    </header>
+
+    <br>  
+
+    <div class="bienvenida">
+        <h1 class="presentacion"> Bienvenido a la pasteleria y panaderia Boycake.</h1>
+        <img alt="image" src="./Inicio.jpg" width="1010">
+    </div>    
+    
     <br>
     <hr>
-
-    <section>
-        <h2>Pasteles</h2>
-        <p>Pasteles disponibles para su compra.</p>
-
-        <table>
-            <tr>
-                <th>Sabores</th>
-                <th>Precio</th>
-            </tr>
-            <tr>
-                <td>Tres leches ................</td>
-                <td>3,50</td>
-                <!--add small img-->
-                <tr>
-            </tr>
-                <td>Chocolate ..................</td>
-                <td>2,00</td>
-                <!--add small img-->
-            </tr>
-            <tr>
-                <td>Vainilla .......................</td>
-                <td>2,75</td>
-                <!--add small img-->
-            </tr>
-            <tr>
-                <td>Fresa .........................</td>
-                <td>2,25</td>
-                <!--add small img-->
-            </tr>    
-        </table>
-    </section>
-
-    <br>
 
     <section>
         <h2>Panes</h2>
@@ -84,6 +67,40 @@
     </section>
 
     <br>
+
+    <section>
+        <h2>Pasteles</h2>
+        <p>Pasteles disponibles para su compra.</p>
+
+        <table>
+            <tr>
+                <th>Sabores</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>Tres leches ................</td>
+                <td>3,50</td>
+                <td><img src="./TresLeches.jpeg" alt="imagen1" width="150" height="150"></img></td>
+            <tr>
+            </tr>
+                <td>Chocolate ..................</td>
+                <td>2,00</td>
+                <td><img src="./ChocolatePastel.jpeg" alt="imagen2" width="150" height="150"></img></td>
+            </tr>
+            <tr>
+                <td>Vainilla .......................</td>
+                <td>2,75</td>
+                <td><img src="./Vainilla.jpg" alt="imagen3" width="150" height="150"></img></td>
+            </tr>
+            <tr>
+                <td>Fresa .........................</td>
+                <td>2,25</td>
+                <td><img src="./Fresa.jpg" alt="imagen4" width="150" height="150"></img></td>
+            </tr>    
+        </table>
+    </section>
+
+    <br>
     
     <section>
         <h2>Decoracion</h2>
@@ -95,32 +112,32 @@
                 <th>Precio</th>
             </tr>
             <tr>
-                <td>Coberturas de chocolate ......</td>
+                <td>Coberturas de chocolate ....</td>
                 <td>3,80</td>
                 <!--add small img-->    
             </tr>
             <tr>
-                <td>Crema de mantequilla ..........</td>
+                <td>Crema de mantequilla ........</td>
                 <td>3,30</td>   
                 <!--add small img--> 
             </tr>
             <tr>
-                <td>Caramelo ..............................</td>
+                <td>Caramelo ...............................</td>
                 <td>2,20</td> 
                 <!--add small img-->   
             </tr>
             <tr>
-                <td>Glaseada ..............................</td>
+                <td>Glaseada ...............................</td>
                 <td>3,50</td> 
                 <!--add small img-->   
             </tr>
             <tr>
-                <td>Floral ....................................</td>
+                <td>Floral ......................................</td>
                 <td>2,60</td>    
                 <!--add small img-->
             </tr>
             <tr>
-                <td>Coco .....................................</td>
+                <td>Coco ......................................</td>
                 <td>3,15</td>
                 <!--add small img-->
             </tr>    
@@ -185,7 +202,7 @@
 
     <section>
         <h2>Formulario para el pedido.</h2>
-        <h3>Usted desea?</h3>
+        <h3>Datos Personales</h3>
 
         <form action="/accion.js" id="form1" method="post">
             <label for="nombre">Nombre:</label> 
@@ -200,18 +217,33 @@
             <label for="correo">Correo:</label>
             <input type="email" id="correo" name="correo" placeholder="Ingrese su correo."><br><br>
 
-            <label for="sabor">Sabor:</label>
+            <h3>Para panes</h3>
+
+            <label for="panes">Panes:</label>
+            <input list="sabor" placeholder="Llene esto si desea."><br><br>
+            <datalist id="sabor">
+                <option value="Sal">
+                <option value="Dulce">
+                <option value="Mixto">
+                <option value="Chocolate">
+            </datalist>
+
+            <label for="unidad">Unidades</label>
+            <input type="number" id="unidades" name="unidades" placeholder="Cuantos panes desea?"><br><br> 
+
+            <h3>Para pastel</h3>
+
+            <label for="sabor">Sabor del pastel:</label>
             <input list="sabor"><br><br>
             <datalist id="sabor">
                 <option value="Tres leches">
                 <option value="Chocolate">
                 <option value="Vainilla">    
-                
                 <option value="Fresa">    
             </datalist>
             
             <!--el (.p) significa pedido-->
-            <label for="decoracion">Decoracion:</label>
+            <label for="decoracion">Decoracion del pastel:</label>
             <input list="decoracion.p"><br><br>
             <datalist id="decoracion.p">
                 <option value="Coberturas de chocolate"> 
@@ -222,7 +254,7 @@
                 <option value="Coco">            
             </datalist>
 
-            <label for="combinaciones1">Combinaciones:</label> 
+            <label for="combinaciones1">Combinaciones para el pastel:</label> 
             <input type="text" id="combinaciones1" name="combinaciones1" placeholder="Describa aqui su 1ra combinacion.">
             <label for="combinaciones2">-</label>
             <input type="text" id="combinaciones2" name="combinaciones2" placeholder="Describa aqui su 2da Combinacion."><br><br>
@@ -235,21 +267,44 @@
     <hr>
 
     <section>
-        <h3>Informacion adicional sobre nuestra pasteleria y panaderia.</h3>
+        <h2 id="N" >Sobre Nosotros</h2>
         <p>Actualmente contamos con la venta de nuestros productos por medio de pedidos con el fin de satisfacer necesidades, 
         como el mejoramiento de la calidad de vida tanto nuestra como de la sociedad en general.
-        <br>
+        <br><br>
+
+        <img alt="image" src="./SobreNosotros.jpg"
+        width="500" height="250">
+        
         <br>
         Nuestro objetivo es dar a conocer los diferentes tipos de pasteles y panes para toda la poblacion,  
         elaboradas con el más avanzado control de higiene, calidad y tecnología en diseño, utilizando 
         como materia prima básica harina creamos productos con garantía, calidad tamaño y frescura ideal para la aceptación total.</p>
+    </section>
         
-        <P>Nuestras redes sociales</P>
-        <ul>
-            <li>Facebook: BoyCake.</li>
-            <li>Instagram: boycake.</li>
-            <li>Correo: boycake.c@gmail.com</li>
-        </ul>
+    <br>
+
+    <section>
+        <h2 id="C">Contactanos</h2>
+        <div class="iconosR">
+            <ul>
+                <img src="./Iconos-Redes/Telefono.png" alt="icono1" width="30" height="30">
+                <li>Telefono: 1234567890</li>
+                <img src="./Iconos-Redes/Facebook.png" alt="icono2" width="30" height="30">
+                <li>Facebook: BoyCake.</li>
+                <img src="./Iconos-Redes/Instagram.png" alt="icono3" width="30" height="30">
+                <li>Instagram: boycake.</li>
+                <img src="./Iconos-Redes/Correo.png" alt="icono4" width="30" height="30">
+                <li>Correo: boycake.c@gmail.com</li>
+            </ul>
+        </div>    
+    </section>
+    
+    <br>
+    
+    <section>
+        <footer>
+            <p>Copyright 2022 BoyCake. Todos los derechos reservados.</p>
+        </footer>
     </section>
 
 </body>

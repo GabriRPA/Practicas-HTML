@@ -1,19 +1,61 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
+@font-face {
+    font-family: myFirstFont;
+    src: url("./Cavorting/Cavorting.ttf");
 }
 
-img{
-    border-radius: 10px;
+*{
+    font-family: myFirstFont;
+    color: #90603c;
+    font-size: 105%;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: #e5dac3;
+}
+
+.bienvenida{
+    margin: 0;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
 }
 
 h2{
-    background-color: #e5dac3;
-    border: 2px solid #90603cab;
-    border-radius: 14px;
+    font-size: 27px;
+}
+
+img{
+    border-radius: 2px;
+    display: flex;
+    margin: auto;
 }
 
 section{
-    background-color: #c3cee5;
-    border: 2px solid #c3cee5;
-    border-radius: 14px;
+    background-color: #e5dac3;
+
+}
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+}
+
+.iconosR{
+    display: flex;
 }
